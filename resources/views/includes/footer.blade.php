@@ -1,92 +1,82 @@
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background" dir="rtl">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">HeroBiz</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
-            </div>
-          </div>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="copyright text-center">
-      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-
-        <div class="d-flex flex-column align-items-center align-items-lg-start">
-          <div>
-            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        <!-- About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">شركة الرحمن</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>المملكة العربية السعودية</p>
+            <p>خدمات عزل متكاملة لجميع أنواع المباني</p>
+            <p class="mt-3"><strong>رقم التواصل:</strong> <span>+966551689585</span></p>
+            <p><strong>متاح طوال الأسبوع</strong></p>
           </div>
         </div>
 
-        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+        <!-- Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">خدماتنا</a></li>
+            <li><a href="#">آراء العملاء</a></li>
+            <li><a href="#">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="#">عزل الأسطح</a></li>
+            <li><a href="#">عزل الخزانات</a></li>
+            <li><a href="#">عزل الفوم</a></li>
+            <li><a href="#">عزل المطابخ</a></li>
+            <li><a href="#">عزل الحمامات</a></li>
+            <li><a href="#">عزل إيبوكسي</a></li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="col-lg-4 col-md-12 footer-links">
+          <h4>احجز الآن</h4>
+          <p>
+            احجز معاينة الآن واحصل على أفضل حلول العزل بأعلى جودة وضمان يصل إلى 10 سنوات.
+          </p>
+          <a href="tel:+966551689585" class="btn btn-primary mt-2">اتصل الآن</a>
         </div>
 
       </div>
     </div>
+  </div>
 
-  </footer>
+  <!-- Copyright -->
+  <div class="copyright text-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+
+      <div>
+        © جميع الحقوق محفوظة <strong><span>شركة الرحمن</span></strong>
+      </div>
+
+      <!-- Social -->
+      <div class="social-links mt-3 mt-lg-0">
+        <a href="https://www.instagram.com/al_rahman.co" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@al_rahman.co" target="_blank">
+          <i class="bi bi-tiktok"></i>
+        </a>
+        <a href="https://x.com/AlRahman_Co" target="_blank">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
