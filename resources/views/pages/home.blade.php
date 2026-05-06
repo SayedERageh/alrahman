@@ -6,31 +6,28 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+<section class="first-hero d-flex align-items-center text-center" dir="rtl">
 
-      <div dir="rtl" class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-        <img src="{{ asset('assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
-          <h1>عزل الأسطح <span>درع الحماية الأقوى</span></h1>
+  <div class="first-hero-overlay"></div>
 
-  <p>
-    لمبناك يبدأ من اختيارك للشريك الصحيح.<br>
-    نقدم حلول عزل هندسية متكاملة تضمن استدامة مبناك وقيمته العقارية<br>
-    بضمان حقيقي يصل إلى 10 سنوات.
-  </p>
-        <div class="d-flex" dir="rtl">
-    <a href="tel:+201000000000" class="btn-watch-video d-flex align-items-center">
-              <span>اتصل بنا</span>
+  <div class="container position-relative">
 
-      <i class="bi bi-telephone"></i>
+    <h1 class="first-hero-title fw-bold mb-3">
+      شركة الرحمن لخدمات العزل المتكاملة
+    </h1>
+
+    <p class="first-hero-text mb-4 fs-5">
+       كيان سعودي متخصص يضع معايير جديدة في حماية المباني
+    </p>
+
+    <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
     </a>
-        <a href="#contact" class="btn-get-started scrollto">تواصل معنا الآن</a>
 
   </div>
-      </div>
 
-    </section><!-- /Hero Section -->
-
+</section>
+   
 <!-- Featured Services Section -->
 <section id="featured-services" class="featured-services section" dir="rtl">
 
@@ -133,9 +130,9 @@
           نحن نوفر لك حلول عزل متكاملة تضمن لك راحة بال طويلة الأمد.
         </p>
 
-        <a class="cta-btn align-self-start btn btn-primary mt-3" href="#contact">
-          تواصل مع خبرائنا الآن
-        </a>
+         <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
 
       </div>
 
@@ -154,6 +151,222 @@
   </div>
 
 </section>
+
+    <!-- Features Section -->
+<section id="features" class="features section" dir="rtl">
+
+  <div class="container" data-aos="fade-up">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs row gy-4 d-flex">
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+          <i class="bi bi-house-door" style="color:#0d6efd;"></i>
+          <h4>عزل الأسطح</h4>
+        </a>
+      </li>
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+          <i class="bi bi-droplet" style="color:#20c997;"></i>
+          <h4>الخزانات</h4>
+        </a>
+      </li>
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+          <i class="bi bi-lightning" style="color:#fd7e14;"></i>
+          <h4>عزل الفوم </h4>
+        </a>
+      </li>
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+          <i class="bi bi-cup-hot" style="color:#6610f2;"></i>
+          <h4>عزل المطابخ </h4>
+        </a>
+      </li>
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
+          <i class="bi bi-shield-check" style="color:#df1529;"></i>
+          <h4>عزل الحمامات</h4>
+        </a>
+      </li>
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
+          <i class="bi bi-grid-3x3" style="color:#0dcaf0;"></i>
+          <h4>عزل الإيبوكسي</h4>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Content -->
+    <div class="tab-content">
+
+      <!-- 1 -->
+      <div class="tab-pane fade active show" id="features-tab-1">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل الأسطح مائي وحراري</h3>
+            <p>مكيف بدون كهرباء وحماية كاملة من حرارة الشمس وتسربات الأمطار.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> تقليل حرارة المبنى حتى 60%</li>
+              <li><i class="bi bi-check-circle-fill"></i> تقليل استهلاك الكهرباء</li>
+              <li><i class="bi bi-check-circle-fill"></i> حماية من التسربات والرطوبة</li>
+            </ul>
+  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-1.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الاسطح ">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="tab-pane fade" id="features-tab-2">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل خزانات المياه</h3>
+            <p>مياه نقية ومنزل آمن بدون تسربات أو تلوث.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> منع تسرب المياه</li>
+              <li><i class="bi bi-check-circle-fill"></i> حماية الأساسات</li>
+              <li><i class="bi bi-check-circle-fill"></i> مواد آمنة ومعتمدة</li>
+            </ul>
+
+             <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-2.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الخزانات ">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="tab-pane fade" id="features-tab-3">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل الفوم الحراري</h3>
+            <p>تقليل فاتورة الكهرباء حتى 40% مع عزل كامل بدون فواصل.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> عزل حراري ومائي متكامل</li>
+              <li><i class="bi bi-check-circle-fill"></i> توفير كبير في الطاقة</li>
+              <li><i class="bi bi-check-circle-fill"></i> عمر افتراضي طويل</li>
+            </ul>
+  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+    
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-3.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الفوم ">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="tab-pane fade" id="features-tab-4">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل المطابخ</h3>
+            <p>منع الرطوبة والبكتيريا خلف الخزائن وحماية الأثاث.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> منع العفن والرطوبة</li>
+              <li><i class="bi bi-check-circle-fill"></i> حماية الهيكل الخشبي</li>
+              <li><i class="bi bi-check-circle-fill"></i> بيئة صحية آمنة</li>
+            </ul>
+  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-4.png') }}" class="img-fluid " alt="شركة الرحمن لعزل المطباخ ">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="tab-pane fade" id="features-tab-5">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل الحمامات</h3>
+            <p>حماية كاملة من تسربات المياه داخل الجدران والأرضيات.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> منع التسربات المخفية</li>
+              <li><i class="bi bi-check-circle-fill"></i> حماية البلاط والجدران</li>
+              <li><i class="bi bi-check-circle-fill"></i> تقليل تكاليف الصيانة</li>
+            </ul>
+
+        <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-5.png') }}" class="img-fluid " alt=" شركة الرحمن لعزل الحمامات">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="tab-pane fade" id="features-tab-6">
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h3>عزل الإيبوكسي</h3>
+            <p>أرضيات قوية مقاومة للكيماويات والبكتيريا وسهلة التنظيف.</p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> مقاومة عالية للتآكل</li>
+              <li><i class="bi bi-check-circle-fill"></i> سطح أملس وسهل التنظيف</li>
+              <li><i class="bi bi-check-circle-fill"></i> مناسب للخزانات والأرضيات</li>
+            </ul>
+  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2 text-center">
+            <img src="{{ asset('assets/img/features-6.png') }}" class="img-fluid " alt="عزل الإيبوكسي مع شركة الرحمن">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <!-- Onfocus Section -->
 <section id="onfocus" class="onfocus section dark-background" dir="rtl">
 
@@ -185,226 +398,10 @@
             <li><i class="bi bi-check-circle"></i> متابعة دورية ودعم فني بعد التنفيذ</li>
           </ul>
 
-          <a href="#contact" class="read-more align-self-start">
+          <a href="https://wa.me/966551689585" class="read-more align-self-start">
             <span>اطلب معاينة مجانية الآن</span>
             <i class="bi bi-arrow-right"></i>
           </a>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-    <!-- Features Section -->
-<section id="features" class="features section" dir="rtl">
-
-  <div class="container" data-aos="fade-up">
-
-    <!-- Tabs -->
-    <ul class="nav nav-tabs row gy-4 d-flex">
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-          <i class="bi bi-house-door" style="color:#0d6efd;"></i>
-          <h4>عزل الأسطح</h4>
-        </a>
-      </li>
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-          <i class="bi bi-droplet" style="color:#20c997;"></i>
-          <h4>الخزانات</h4>
-        </a>
-      </li>
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-          <i class="bi bi-lightning" style="color:#fd7e14;"></i>
-          <h4>الفوم</h4>
-        </a>
-      </li>
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-          <i class="bi bi-cup-hot" style="color:#6610f2;"></i>
-          <h4>المطابخ</h4>
-        </a>
-      </li>
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
-          <i class="bi bi-shield-check" style="color:#df1529;"></i>
-          <h4>الحمامات</h4>
-        </a>
-      </li>
-
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
-          <i class="bi bi-grid-3x3" style="color:#0dcaf0;"></i>
-          <h4>الإيبوكسي</h4>
-        </a>
-      </li>
-
-    </ul>
-
-    <!-- Content -->
-    <div class="tab-content">
-
-      <!-- 1 -->
-      <div class="tab-pane fade active show" id="features-tab-1">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الأسطح مائي وحراري</h3>
-            <p>مكيف بدون كهرباء وحماية كاملة من حرارة الشمس وتسربات الأمطار.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل حرارة المبنى حتى 60%</li>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل استهلاك الكهرباء</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية من التسربات والرطوبة</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-1.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الاسطح ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 2 -->
-      <div class="tab-pane fade" id="features-tab-2">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل خزانات المياه</h3>
-            <p>مياه نقية ومنزل آمن بدون تسربات أو تلوث.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع تسرب المياه</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية الأساسات</li>
-              <li><i class="bi bi-check-circle-fill"></i> مواد آمنة ومعتمدة</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-2.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الخزانات ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="tab-pane fade" id="features-tab-3">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الفوم الحراري</h3>
-            <p>تقليل فاتورة الكهرباء حتى 40% مع عزل كامل بدون فواصل.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> عزل حراري ومائي متكامل</li>
-              <li><i class="bi bi-check-circle-fill"></i> توفير كبير في الطاقة</li>
-              <li><i class="bi bi-check-circle-fill"></i> عمر افتراضي طويل</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-3.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الفوم ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="tab-pane fade" id="features-tab-4">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل المطابخ</h3>
-            <p>منع الرطوبة والبكتيريا خلف الخزائن وحماية الأثاث.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع العفن والرطوبة</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية الهيكل الخشبي</li>
-              <li><i class="bi bi-check-circle-fill"></i> بيئة صحية آمنة</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-4.png') }}" class="img-fluid " alt="شركة الرحمن لعزل المطباخ ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="tab-pane fade" id="features-tab-5">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الحمامات</h3>
-            <p>حماية كاملة من تسربات المياه داخل الجدران والأرضيات.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع التسربات المخفية</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية البلاط والجدران</li>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل تكاليف الصيانة</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-5.png') }}" class="img-fluid " alt=" شركة الرحمن لعزل الحمامات">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 6 -->
-      <div class="tab-pane fade" id="features-tab-6">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الإيبوكسي</h3>
-            <p>أرضيات قوية مقاومة للكيماويات والبكتيريا وسهلة التنظيف.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> مقاومة عالية للتآكل</li>
-              <li><i class="bi bi-check-circle-fill"></i> سطح أملس وسهل التنظيف</li>
-              <li><i class="bi bi-check-circle-fill"></i> مناسب للخزانات والأرضيات</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary mt-3">
-              اقرأ المزيد قبل الطلب
-            </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-6.png') }}" class="img-fluid " alt="عزل الإيبوكسي مع شركة الرحمن">
-          </div>
 
         </div>
       </div>
@@ -696,7 +693,7 @@
 
       <!-- Image -->
       <div class="col-lg-5 order-1 order-lg-2">
-        <img src="assets/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in">
+        <img src="{{ asset('assets/img/faq.jpeg') }}" class="img-fluid" alt="" data-aos="zoom-in">
       </div>
 
     </div>

@@ -5,27 +5,31 @@
       <div class="row gy-4">
 
         <!-- About -->
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">شركة الرحمن</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>المملكة العربية السعودية</p>
-            <p>خدمات عزل متكاملة لجميع أنواع المباني</p>
-            <p class="mt-3"><strong>رقم التواصل:</strong> <span>+966551689585</span></p>
-            <p><strong>متاح طوال الأسبوع</strong></p>
-          </div>
-        </div>
+    <div class="col-lg-4 col-md-6 footer-about">
+  <a href="{{ route('home') }}" class="logo d-flex align-items-center">
+    <span class="sitename">شركة الرحمن</span>
+  </a>
+  <div class="footer-contact pt-3">
+    <p>
+      شركة الرحمن لخدمات العزل المتكاملة  كيان سعودي متخصص،
+      يضع معايير جديدة في حماية المباني من خلال حلول عزل متطورة
+      تضمن الجودة والكفاءة والاستدامة.
+    </p>
+
+
+    <p class="mt-3"><strong>رقم التواصل:</strong> <span>+966551689585</span></p>
+    <p><strong>متاحون لخدمتكم طوال أيام الأسبوع</strong></p>
+  </div>
+</div>
 
         <!-- Links -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>روابط سريعة</h4>
           <ul>
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">خدماتنا</a></li>
-            <li><a href="#">آراء العملاء</a></li>
-            <li><a href="#">تواصل معنا</a></li>
+  <li><a href="{{ route('home') }}">الرئيسية</a></li>
+<li><a href="{{ route('about') }}">من نحن</a></li>
+<li><a href="{{ route('services.index') }}">خدماتنا</a></li>
+<li><a href="{{ route('contact') }}">تواصل معنا</a></li>
           </ul>
         </div>
 
@@ -33,13 +37,14 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>خدماتنا</h4>
           <ul>
-            <li><a href="#">عزل الأسطح</a></li>
-            <li><a href="#">عزل الخزانات</a></li>
-            <li><a href="#">عزل الفوم</a></li>
-            <li><a href="#">عزل المطابخ</a></li>
-            <li><a href="#">عزل الحمامات</a></li>
-            <li><a href="#">عزل إيبوكسي</a></li>
-          </ul>
+    @foreach($services ?? [] as $service)
+      <li>
+        <a href="{{ route('services.show', $service->slug) }}">
+          {{ $service->title }}
+        </a>
+      </li>
+    @endforeach
+  </ul>
         </div>
 
         <!-- CTA -->

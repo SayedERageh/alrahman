@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $service->meta_title ?? $service->title)
+@section('title',  $service->title)
 
 @section('meta')
 <meta name="description" content="{{ $service->meta_description }}">

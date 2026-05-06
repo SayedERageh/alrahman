@@ -1,11 +1,22 @@
 :root {
-    font-family: 'Tajawal', sans-serif;
-
-  --default-font:  'Tajawal', sans-serif;
-  --heading-font:'Tajawal', sans-serif;
-  --nav-font: 'Tajawal', sans-serif;
+  --default-font: 'Cairo', sans-serif;
+  --heading-font: 'Cairo', sans-serif;
+  --nav-font: 'Cairo', sans-serif;
+}
+body {
+  font-family: var(--default-font);
+  font-weight: 400;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+nav, .navmenu {
+  font-family: var(--nav-font);
+  font-weight: 500;
+}
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -156,62 +167,10 @@ h6 {
   }
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Global Header
+/* PHP Email Form Messagesh HHHHeader
 --------------------------------------------------------------*/
 .header {
+  --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -219,24 +178,42 @@ h6 {
   z-index: 997;
 }
 
+.header .header-container {
+  background: var(--surface-color);
+  border-radius: 50px;
+  padding: 5px 25px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .header .header-container {
+  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+}
+
 .header .logo {
   line-height: 1;
+  padding-left: 5px;
 }
 
 .header .logo img {
-  max-height: 50px;
+  max-height: 36px;
   margin-right: 8px;
 }
 
+.header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+  color: var(--heading-color);
+}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
-  padding: 8px 26px;
-  margin: 0;
-  border-radius: 4px;
+  padding: 8px 20px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
   transition: 0.3s;
 }
 
@@ -247,24 +224,90 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+  .header {
+    padding-top: 10px;
+  }
+
+  .header .header-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 5px 10px 15px;
+  }
+
   .header .logo {
     order: 1;
   }
 
   .header .btn-getstarted {
     order: 2;
-    margin: 0 15px 0 0;
-    padding: 6px 20px;
+    margin: 0 10px 0 0;
+    padding: 6px 15px;
   }
 
   .header .navmenu {
     order: 3;
   }
 }
-
-.scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+/* The Frist Hero */
+.first-hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/hero.jpeg") center/cover no-repeat;
 }
+
+/* overlay */
+.first-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* content */
+.first-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* النص */
+.first-hero-title,
+.first-hero-text {
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: 
+linear-gradient(45deg, #0d6efd, #4dabf7);  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(18, 140, 126, 0.3);
+}
+
+/* Hover */
+.whatsapp-btn:hover {
+  background: linear-gradient(135deg, #1ebe5d, #0f6f66);
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(18, 140, 126, 0.5);
+  color: #fff;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .first-hero-title {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .first-hero-text {
+    font-size: 14px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -1232,7 +1275,7 @@ section,
 
 .onfocus .video-play {
   min-height: 400px;
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.jpg") center center;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.jpeg") center center;
   background-size: cover;
 }
 
