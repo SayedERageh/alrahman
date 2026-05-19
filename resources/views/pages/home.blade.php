@@ -110,47 +110,7 @@
 
 </section>
    
-<!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section" dir="rtl">
 
-  <div class="container" data-aos="zoom-out">
-
-    <div class="row g-5 align-items-center">
-
-      <!-- Content -->
-      <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-
-        <h3>
-          عقارك هو استثمارك الحقيقي.. احمه بذكاء مع خبراء شركة الرحمن للعزل
-        </h3>
-
-        <p>
-          عقارك مش مجرد مبنى.. ده استثمار لازم تحافظ عليه.  
-          احمه بذكاء مع خبراء شركة الرحمن للعزل، قبل ما التسربات أو حرارة الشمس تكلفك أضعاف.
-          نحن نوفر لك حلول عزل متكاملة تضمن لك راحة بال طويلة الأمد.
-        </p>
-
-         <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-
-      </div>
-
-      <!-- Image -->
-      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
-
-        <div class="img">
-          <img style="height: 300px"
-           src="{{ asset('assets/img/apple-touch-icon.png') }}" alt="شركة الرحمن للعزل" class="img-fluid rounded shadow">
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 
     <!-- Features Section -->
 <section id="features" class="features section" dir="rtl">
@@ -170,7 +130,7 @@
       <li class="nav-item col-6 col-md-4 col-lg-2">
         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
           <i class="bi bi-droplet" style="color:#20c997;"></i>
-          <h4>الخزانات</h4>
+          <h4>عزل الخزنات </h4>
         </a>
       </li>
 
@@ -365,7 +325,47 @@
   </div>
 
 </section>
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section" dir="rtl">
 
+  <div class="container" data-aos="zoom-out">
+
+    <div class="row g-5 align-items-center">
+
+      <!-- Content -->
+      <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+
+        <h3>
+          عقارك هو استثمارك الحقيقي.. احمه بذكاء مع خبراء شركة الرحمن للعزل
+        </h3>
+
+        <p>
+          عقارك مش مجرد مبنى.. ده استثمار لازم تحافظ عليه.  
+          احمه بذكاء مع خبراء شركة الرحمن للعزل، قبل ما التسربات أو حرارة الشمس تكلفك أضعاف.
+          نحن نوفر لك حلول عزل متكاملة تضمن لك راحة بال طويلة الأمد.
+        </p>
+
+         <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
+      تواصل عبر واتساب
+    </a>
+
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+
+        <div class="img">
+          <img style="height: 300px"
+           src="{{ asset('assets/img/apple-touch-icon.png') }}" alt="شركة الرحمن للعزل" class="img-fluid rounded shadow">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- Onfocus Section -->
 <section id="onfocus" class="onfocus section dark-background" dir="rtl">
@@ -693,7 +693,7 @@
 
       <!-- Image -->
       <div class="col-lg-5 order-1 order-lg-2">
-        <img src="{{ asset('assets/img/faq.jpeg') }}" class="img-fluid" alt="" data-aos="zoom-in">
+        <img src="{{ asset('assets/img/faq.jpg') }}" class="img-fluid" alt="" data-aos="zoom-in">
       </div>
 
     </div>

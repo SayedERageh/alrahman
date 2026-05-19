@@ -252,7 +252,7 @@ h6 {
 .first-hero {
   position: relative;
   min-height: 100vh;
-  background: url("../img/hero.jpeg") center/cover no-repeat;
+  background: url("../img/hero.jpg") center/cover no-repeat;
 }
 
 /* overlay */
