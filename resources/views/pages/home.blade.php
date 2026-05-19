@@ -637,7 +637,7 @@
 
         <!-- Title -->
         <div class="content px-xl-5" data-aos="fade-up">
-          <h3><span>أسئلة </span><strong>شائعة</strong></h3>
+          <h3><strong>أسئلة </strong><strong>شائعة</strong></h3>
           <p>
             ولأننا نعلم أن قرار حماية منزلك يحتاج لليقين الكامل..
             جمعنا لك أبرز الاستفسارات التي تدور في ذهنك الآن.
@@ -673,20 +673,7 @@
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div>
 
-          <!-- FAQ 3 -->
-          <div class="faq-item">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>لماذا أختار شركة الرحمن رغم وجود أسعار أقل في السوق؟</h3>
-            <div class="faq-content">
-              <p>
-                في مجال العزل السعر الأقل غالبًا يعني مواد ضعيفة أو تنفيذ غير هندسي يؤدي لفشل العزل لاحقًا.
-                نحن لا ننافس على السعر الأقل بل على الجودة التي توفر لك تكلفة أقل على المدى الطويل
-                بدون إعادة إصلاح أو خسائر مستقبلية.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
-
+       
         </div>
 
       </div>

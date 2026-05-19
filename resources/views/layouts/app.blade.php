@@ -29,7 +29,59 @@
 </head>
 
 <body class="index-page">
+<!-- Floating Buttons -->
+<div class="floating-buttons">
 
+  <!-- WhatsApp -->
+  <a href="https://wa.me/201044946388" target="_blank" class="float-btn whatsapp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Call -->
+  <a href="tel:01044946388" class="float-btn call">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+</div>
+
+<style>
+.floating-buttons {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+}
+
+.float-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.float-btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #007bff;
+}
+</style>
     @include('includes.header')
 
   <main class="main">

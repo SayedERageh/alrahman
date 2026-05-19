@@ -60,10 +60,11 @@
 
     <!-- CTA BUTTONS -->
     <div class="d-flex gap-2">
-      <a class="btn-getstarted" href="#contact">
-        ابدأ الآن
+      <a href="https://wa.me/966551689585" class="btn-getstarted" href="#contact">
+      تواصل عبر واتساب
       </a>
     </div>
+
 
   </div>
 </header>
