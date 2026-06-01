@@ -55,6 +55,7 @@ class ParagraphsRelationManager extends RelationManager
         return $table
             ->recordTitleAttribute('content')
             ->columns([
+                
               TextColumn::make('content')
                     ->label('النص')
                     ->limit(50)

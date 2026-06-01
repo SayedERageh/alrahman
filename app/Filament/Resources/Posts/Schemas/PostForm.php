@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Filament\Resources\Posts\Schemas;
+                             use Filament\Forms\Components\RichEditor;
 
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Tabs;
@@ -66,20 +67,28 @@ class PostForm
                             ])
                             ->columns(1),
 
-                        // 📝 المحتوى + الفقرات
-                        Tab::make('📝 المحتوى')
-                            ->schema([
+              Tab::make('📝 المحتوى')
+    ->schema([
 
-                                Textarea::make('content')
-                                    ->label('محتوى المقال (اختياري)')
-                                    ->rows(5)
-                                    ->columnSpanFull(),
+        RichEditor::make('content')
+            ->label('محتوى المقال')
+            ->columnSpanFull()
+            ->toolbarButtons([
+                'bold',
+                'italic',
+                'underline',
+                'strike',
+                'h2',
+                'h3',
+                'bulletList',
+                'orderedList',
+                'link',
+                'blockquote',
+            ])
+            ->required(false),
 
-                                // لو هتستخدمه لاحقًا بدل RichEditor
-                                // Relation Manager للفقرات هيكون أقوى هنا
-
-                            ])
-                            ->columns(1),
+    ])
+    ->columns(1),
 
                         // 🔎 SEO
                         Tab::make('🔎 SEO')
