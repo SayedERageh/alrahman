@@ -70,22 +70,22 @@ class PostForm
               Tab::make('📝 المحتوى')
     ->schema([
 
-        RichEditor::make('content')
-            ->label('محتوى المقال')
-            ->columnSpanFull()
-            ->toolbarButtons([
-                'bold',
-                'italic',
-                'underline',
-                'strike',
-                'h2',
-                'h3',
-                'bulletList',
-                'orderedList',
-                'link',
-                'blockquote',
-            ])
-            ->required(false),
+     RichEditor::make('content')
+    ->label('محتوى المقال')
+    ->columnSpanFull()
+    ->toolbarButtons([
+        ['bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'link'],
+        ['h1', 'h2', 'h3', 'h4'],
+        ['alignStart', 'alignCenter', 'alignEnd', 'alignJustify'],
+        ['blockquote', 'codeBlock'],
+        ['bulletList', 'orderedList'],
+        ['table', 'attachFiles'],
+        ['highlight', 'textColor'],
+        ['undo', 'redo'],
+    ])
+    ->fileAttachmentsDisk('public')
+    ->fileAttachmentsDirectory('posts')
+    ->resizableImages(),
 
     ])
     ->columns(1),
