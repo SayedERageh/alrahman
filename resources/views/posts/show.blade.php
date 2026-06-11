@@ -76,13 +76,11 @@
                      style="width:100%; max-height:400px; object-fit:cover;">
               @endif
 
-              <p style="font-size:18px; line-height:2; color:#333;">
-                {!! nl2br($paragraph->content) !!}
-              </p>
-
-            </div>
 
           @endforeach
+    <div class="article-content p-2 p-md-3">
+    {!! $post->content !!}
+</div>
 
         </div>
 
@@ -196,12 +194,12 @@
 
           <div class="card-body">
 
-            <h6>
+            <h1>
               <a href="{{ route('posts.show', $item->slug) }}"
                  class="text-dark text-decoration-none">
                 {{ $item->title }}
               </a>
-            </h6>
+            </h1>
 
           </div>
 

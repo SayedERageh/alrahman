@@ -111,214 +111,43 @@
 </section>
    
 
+<section class="features section" dir="rtl" id="services">
 
-    <!-- Features Section -->
-<section id="features" class="features section" dir="rtl">
+  <div class="container">
 
-  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2>خدماتنا</h2>
+      <p class="text-muted">نقدم مجموعة متكاملة من خدمات العزل</p>
+    </div>
 
-    <!-- Tabs -->
-    <ul class="nav nav-tabs row gy-4 d-flex">
+    <div class="row g-4">
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-          <i class="bi bi-house-door" style="color:#0d6efd;"></i>
-          <h4>عزل الأسطح</h4>
-        </a>
-      </li>
+      @foreach($services as $service)
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-          <i class="bi bi-droplet" style="color:#20c997;"></i>
-          <h4>عزل الخزنات </h4>
-        </a>
-      </li>
+        <div class="col-md-4 col-sm-6">
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-          <i class="bi bi-lightning" style="color:#fd7e14;"></i>
-          <h4>عزل الفوم </h4>
-        </a>
-      </li>
+          <div class="service-card text-center p-4 shadow-sm rounded h-100">
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-          <i class="bi bi-cup-hot" style="color:#6610f2;"></i>
-          <h4>عزل المطابخ </h4>
-        </a>
-      </li>
+            <img src="{{ asset('uploads/' . $service->image) }}"
+                 class="img-fluid mb-3"
+                 style="height:120px; object-fit:contain;">
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
-          <i class="bi bi-shield-check" style="color:#df1529;"></i>
-          <h4>عزل الحمامات</h4>
-        </a>
-      </li>
+            <h4 class="mb-2">{{ $service->title }}</h4>
 
-      <li class="nav-item col-6 col-md-4 col-lg-2">
-        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
-          <i class="bi bi-grid-3x3" style="color:#0dcaf0;"></i>
-          <h4>عزل الإيبوكسي</h4>
-        </a>
-      </li>
+            <p class="text-muted">
+              {{ Str::limit($service->description, 90) }}
+            </p>
 
-    </ul>
+            <a href="{{ route('services.show', $service->slug) }}"
+               class="btn btn-primary btn-sm mt-2">
+              قراءة المزيد
+            </a>
 
-    <!-- Content -->
-    <div class="tab-content">
-
-      <!-- 1 -->
-      <div class="tab-pane fade active show" id="features-tab-1">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الأسطح مائي وحراري</h3>
-            <p>مكيف بدون كهرباء وحماية كاملة من حرارة الشمس وتسربات الأمطار.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل حرارة المبنى حتى 60%</li>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل استهلاك الكهرباء</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية من التسربات والرطوبة</li>
-            </ul>
-  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-1.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الاسطح ">
           </div>
 
         </div>
-      </div>
 
-      <!-- 2 -->
-      <div class="tab-pane fade" id="features-tab-2">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل خزانات المياه</h3>
-            <p>مياه نقية ومنزل آمن بدون تسربات أو تلوث.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع تسرب المياه</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية الأساسات</li>
-              <li><i class="bi bi-check-circle-fill"></i> مواد آمنة ومعتمدة</li>
-            </ul>
-
-             <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-2.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الخزانات ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="tab-pane fade" id="features-tab-3">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الفوم الحراري</h3>
-            <p>تقليل فاتورة الكهرباء حتى 40% مع عزل كامل بدون فواصل.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> عزل حراري ومائي متكامل</li>
-              <li><i class="bi bi-check-circle-fill"></i> توفير كبير في الطاقة</li>
-              <li><i class="bi bi-check-circle-fill"></i> عمر افتراضي طويل</li>
-            </ul>
-  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-    
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-3.png') }}" class="img-fluid " alt="شركة الرحمن لعزل الفوم ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="tab-pane fade" id="features-tab-4">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل المطابخ</h3>
-            <p>منع الرطوبة والبكتيريا خلف الخزائن وحماية الأثاث.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع العفن والرطوبة</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية الهيكل الخشبي</li>
-              <li><i class="bi bi-check-circle-fill"></i> بيئة صحية آمنة</li>
-            </ul>
-  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-4.png') }}" class="img-fluid " alt="شركة الرحمن لعزل المطباخ ">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="tab-pane fade" id="features-tab-5">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الحمامات</h3>
-            <p>حماية كاملة من تسربات المياه داخل الجدران والأرضيات.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> منع التسربات المخفية</li>
-              <li><i class="bi bi-check-circle-fill"></i> حماية البلاط والجدران</li>
-              <li><i class="bi bi-check-circle-fill"></i> تقليل تكاليف الصيانة</li>
-            </ul>
-
-        <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-5.png') }}" class="img-fluid " alt=" شركة الرحمن لعزل الحمامات">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 6 -->
-      <div class="tab-pane fade" id="features-tab-6">
-        <div class="row align-items-center gy-4">
-
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h3>عزل الإيبوكسي</h3>
-            <p>أرضيات قوية مقاومة للكيماويات والبكتيريا وسهلة التنظيف.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle-fill"></i> مقاومة عالية للتآكل</li>
-              <li><i class="bi bi-check-circle-fill"></i> سطح أملس وسهل التنظيف</li>
-              <li><i class="bi bi-check-circle-fill"></i> مناسب للخزانات والأرضيات</li>
-            </ul>
-  <a href="https://wa.me/966551689585" target="_blank" class="whatsapp-btn">
-      تواصل عبر واتساب
-    </a>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="{{ asset('assets/img/features-6.png') }}" class="img-fluid " alt="عزل الإيبوكسي مع شركة الرحمن">
-          </div>
-
-        </div>
-      </div>
+      @endforeach
 
     </div>
 
@@ -356,7 +185,7 @@
 
         <div class="img">
           <img style="height: 300px"
-           src="{{ asset('assets/img/apple-touch-icon.png') }}" alt="شركة الرحمن للعزل" class="img-fluid rounded shadow">
+           src="{{ asset('assets/img/aqar.jpg') }}" alt="شركة الرحمن للعزل" class="img-fluid rounded shadow">
         </div>
 
       </div>
@@ -566,22 +395,7 @@
           </div>
         </div>
 
-        <!-- 3 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-            <h3>حسن علي</h3>
-            <h4>عميل</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>شغل نضيف جداً والتعامل محترم، والأهم الالتزام في المواعيد وجودة التنفيذ.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
+      
 
         <!-- 4 -->
         <div class="swiper-slide">
@@ -603,7 +417,7 @@
         <!-- 5 (بنت) -->
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+            <img src="{{ asset('assets/img/testimonials/testimonials-5.png') }}" class="testimonial-img" alt="">
             <h3>سارة أحمد</h3>
             <h4>عميلة</h4>
             <div class="stars">

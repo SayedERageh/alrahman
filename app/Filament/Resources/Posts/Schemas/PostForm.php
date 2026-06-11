@@ -12,6 +12,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
 use Illuminate\Support\Str;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 
 class PostForm
 {
@@ -70,22 +71,27 @@ class PostForm
               Tab::make('📝 المحتوى')
     ->schema([
 
-     RichEditor::make('content')
-    ->label('محتوى المقال')
-    ->columnSpanFull()
-    ->toolbarButtons([
-        ['bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'link'],
-        ['h1', 'h2', 'h3', 'h4'],
-        ['alignStart', 'alignCenter', 'alignEnd', 'alignJustify'],
-        ['blockquote', 'codeBlock'],
-        ['bulletList', 'orderedList'],
-        ['table', 'attachFiles'],
-        ['highlight', 'textColor'],
-        ['undo', 'redo'],
-    ])
+TinyEditor::make('content')
+    ->profile('full')
     ->fileAttachmentsDisk('public')
     ->fileAttachmentsDirectory('posts')
-    ->resizableImages(),
+    ->columnSpanFull(),
+    //  RichEditor::make('content')
+    // ->label('محتوى المقال')
+    // ->columnSpanFull()
+    // ->toolbarButtons([
+    //     ['bold', 'italic', 'underline', 'strike', 'subscript', 'superscript', 'link'],
+    //     ['h1', 'h2', 'h3', 'h4'],
+    //     ['alignStart', 'alignCenter', 'alignEnd', 'alignJustify'],
+    //     ['blockquote', 'codeBlock'],
+    //     ['bulletList', 'orderedList'],
+    //     ['table', 'attachFiles'],
+    //     ['highlight', 'textColor'],
+    //     ['undo', 'redo'],
+    // ])
+    // ->fileAttachmentsDisk('public')
+    // ->fileAttachmentsDirectory('posts')
+    // ->resizableImages(),
 
     ])
     ->columns(1),
