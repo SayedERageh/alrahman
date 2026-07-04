@@ -12,7 +12,9 @@ class Service extends Model
         'description',
         'image',
         'meta_keywords',
-        'meta_description'
+        'meta_description',
+            'sort_order'
+
 
     ];
     protected $casts = [

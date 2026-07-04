@@ -3,153 +3,58 @@
 @section('title', 'الصفحة الرئيسية')
 
 @section('content')
-<!-- About Section -->
-<section id="about" class="about section" dir="rtl">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>من نحن؟</h2>
-    <p>
-      في الرحمن .. نحن لا نعزل الأسطح فقط، بل نحمي منزلك واستثمارك من أخطر التحديات المناخية.
-      نقدم حلول عزل احترافية تضمن لك الراحة والأمان على المدى الطويل.
-    </p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up">
-
-    <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-5">
-        <div class="about-img">
-          <img src="assets/img/about-portrait.jpg" class="img-fluid" alt="شركة عزل اسطح وخزانات">
+ <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-2.jpg);">
+        <div class="container-fluid page-header-inner py-5">
+            <div class="container text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">من نحن</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="{{ route('contact') }}">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">about</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
-      </div>
-
-      <div class="col-lg-7">
-        <h3 class="pt-0 pt-lg-5">
-          شركة الرحمن لخدمات العزل المتكاملة هي كيان سعودي متخصص يضع معايير جديدة في حماية المباني
-        </h3>
-
-        <!-- Tabs -->
-        <ul class="nav nav-pills mb-3">
-          <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">عن الشركة</a></li>
-          <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">رؤيتنا</a></li>
-          <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">مميزاتنا</a></li>
-        </ul><!-- End Tabs -->
-
-        <!-- Tab Content -->
-        <div class="tab-content">
-
-          <!-- Tab 1 -->
-          <div class="tab-pane fade show active" id="about-tab1">
-
-            <p class="fst-italic">
-              نحن لا نقدم خدمات عزل تقليدية، بل نصمم منظومات حماية متكاملة تضمن استدامة العقار
-              وسلامة من فيه وفقًا لأعلى مواصفات كود البناء السعودي.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>عزل أسطح مائي وحراري بأعلى جودة</h4>
-            </div>
-            <p>
-              نحمي منزلك من تسربات المياه وحرارة الشمس مما يطيل عمر المبنى ويقلل تكاليف الصيانة.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>حلول عزل متكاملة للخزانات والحمامات</h4>
-            </div>
-            <p>
-              نضمن لك بيئة صحية وآمنة خالية من الرطوبة والتسربات التي تؤثر على سلامة البناء.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>تقنيات حديثة ومواد معتمدة</h4>
-            </div>
-            <p>
-              نستخدم أحدث المواد والتقنيات المعتمدة لتحقيق أفضل أداء ممكن في جميع مشاريعنا.
-            </p>
-
-          </div><!-- End Tab 1 -->
-
-          <!-- Tab 2 -->
-          <div class="tab-pane fade" id="about-tab2">
-
-            <p class="fst-italic">
-              رؤيتنا أن نكون الخيار الأول في مجال العزل داخل المملكة من خلال تقديم جودة حقيقية
-              تبني الثقة مع عملائنا.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>الجودة قبل أي شيء</h4>
-            </div>
-            <p>
-              نركز على تنفيذ كل مشروع بأعلى مستوى من الدقة والاحترافية لضمان نتائج تدوم لسنوات.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>راحة العميل أولويتنا</h4>
-            </div>
-            <p>
-              نحرص على تقديم تجربة مريحة وسلسة بداية من المعاينة وحتى التسليم النهائي.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>تطوير مستمر</h4>
-            </div>
-            <p>
-              نتابع أحدث تقنيات العزل عالميًا لنقدم حلول متطورة تواكب احتياجات السوق.
-            </p>
-
-          </div><!-- End Tab 2 -->
-
-          <!-- Tab 3 -->
-          <div class="tab-pane fade" id="about-tab3">
-
-            <p class="fst-italic">
-              ما يميزنا ليس فقط الخدمة بل النتائج التي يراها عملاؤنا على أرض الواقع.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>خبرة في السوق السعودي</h4>
-            </div>
-            <p>
-              نفهم طبيعة المناخ القاسي ونقدم حلول مناسبة لكل حالة.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>التزام بالمواعيد</h4>
-            </div>
-            <p>
-              ننجز المشاريع في الوقت المحدد دون تأخير مع الحفاظ على أعلى جودة.
-            </p>
-
-            <div class="d-flex align-items-center mt-4">
-              <i class="bi bi-check2"></i>
-              <h4>ضمان يصل إلى 10 سنوات</h4>
-            </div>
-            <p>
-              نقدم ضمان حقيقي يعكس ثقتنا في جودة التنفيذ وراحة عملائنا.
-            </p>
-
-          </div><!-- End Tab 3 -->
-
-        </div>
-
-      </div>
-
     </div>
+<!-- About Section -->
+<section id="about" class="about-simple py-5" dir="rtl">
+    <div class="container">
+        <div class="row align-items-center g-5">
 
-  </div>
+ 
+            <!-- Content -->
+            <div class="col-lg-6">
 
-</section><!-- /About Section -->
+                <h2 class="about-title">
+                    شركة الرحمن للعزل
+                </h2>
+
+                <p class="about-text">
+                    شركة متخصصة في أعمال عزل الأسطح والخزانات والحمامات، نقدم حلول عزل
+                    احترافية باستخدام أحدث المواد والتقنيات لضمان حماية المباني من
+                    تسربات المياه ودرجات الحرارة العالية، مع الالتزام بأعلى معايير
+                    الجودة والاحترافية.
+                </p>
+
+                <p class="about-text">
+                    نسعى إلى تقديم أفضل خدمة لعملائنا من خلال فريق عمل متخصص وخبرة
+                    طويلة في تنفيذ جميع مشاريع العزل داخل المملكة، مع ضمان حقيقي على
+                    جميع الأعمال.
+                </p>
+
+            </div>
+
+                       <!-- Image -->
+            <div class="col-lg-6">
+                <img src="{{ asset('assets/img/faq.jpg') }}"
+                     class="img-fluid rounded-4 shadow"
+                     alt="شركة الرحمن للعزل">
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 <section class="section bg-light text-center">
@@ -224,6 +129,29 @@
 </section>
 <style>
     
+.about-simple {
+    background: #fff;
+}
+
+.about-simple img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.about-title {
+    color: #18b7c9;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 2;
+    color: #555;
+    margin-bottom: 20px;
+}    
     /* Wrapper (الدائرة الخارجية) */
 .circle-wrap {
   position: relative;

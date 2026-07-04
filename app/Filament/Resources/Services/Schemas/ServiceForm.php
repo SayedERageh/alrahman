@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Services\Schemas;
 
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
@@ -53,27 +54,11 @@ class ServiceForm
                             ])
                             ->columns(1),
 
-                        Tab::make('📝 تفاصيل الخدمة')
-                            ->schema([
-                                RichEditor::make('description')
-                                    ->label('تفاصيل الخدمة')
-                                    ->required()
-                                    ->columnSpanFull()
-                                    ->extraAttributes([
-                                        'style' => 'direction: rtl; min-height: 500px;',
-                                    ])
-                                    ->toolbarButtons([
-                                        'bold',
-                                        'italic',
-                                        'underline',
-                                        'bulletList',
-                                        'orderedList',
-                                        'link',
-                                        'h2',
-                                        'h3',
-                                        'blockquote',
-                                    ]),
-                            ])
+                      TinyEditor::make('content')
+    ->profile('full')
+    ->fileAttachmentsDisk('public')
+    ->fileAttachmentsDirectory('posts')
+    ->columnSpanFull()
                             ->columns(1),
 
                         Tab::make('🔎 SEO')
@@ -96,6 +81,12 @@ class ServiceForm
                     ->id('service-tabs')
                     ->contained(false)
                     ->columnSpanFull(),
+                    TextInput::make('sort_order')
+    ->label('ترتيب الخدمة')
+    ->numeric()
+    ->default(0)
+    ->required()
+    ->helperText('كلما كان الرقم أصغر ظهرت الخدمة أولاً'),
             ]);
     }
 }

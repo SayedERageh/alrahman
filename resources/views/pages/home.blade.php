@@ -205,7 +205,7 @@
 
       <!-- Video -->
       <div class="col-lg-6 video-play position-relative">
-        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+        <a href="https://youtube.com/shorts/EO4CEZ1MZ4o?feature=share" class="glightbox pulsating-play-btn"></a>
       </div>
 
       <!-- Content -->
@@ -329,179 +329,23 @@
 
 </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section dark-background">
+<div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>آراء العملاء</h2>
-    <p>شهادات حقيقية من عملاء شركة الرحمن لخدمات العزل</p>
-  </div>
-
-  <img src="{{ asset('assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt="">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-
-      <div class="swiper-wrapper">
-
-        <!-- 1 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-            <h3>أحمد عبد الرحمن</h3>
-            <h4>عميل</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>شركة الرحمن من أفضل الشركات اللي اتعاملت معاها، شغل العزل عندي اتنفذ بجودة عالية واحترافية كبيرة.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-            <h3>محمد سامي</h3>
-            <h4>مالك عقار</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>كنت بعاني من تسريب مياه، وبعد تنفيذ العزل من شركة الرحمن المشكلة اتحلت نهائياً وبضمان حقيقي.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-      
-
-        <!-- 4 -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-            <h3>عبدالله محمود</h3>
-            <h4>عميل</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>الجودة ممتازة والسعر مناسب جداً مقارنة بالخدمة، تجربة أنصح بيها.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <!-- 5 (بنت) -->
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="{{ asset('assets/img/testimonials/testimonials-5.png') }}" class="testimonial-img" alt="">
-            <h3>سارة أحمد</h3>
-            <h4>عميلة</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>شركة الرحمن فعلاً تستاهل الثقة، التنفيذ سريع ونتيجة العزل ممتازة جداً بدون أي مشاكل.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section>
-<!-- /Testimonials Section -->
-<!-- FAQ Section -->
-<section id="faq" class="faq section" dir="rtl">
-
-  <div class="container-fluid">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-        <!-- Title -->
-        <div class="content px-xl-5" data-aos="fade-up">
-          <h3><strong>أسئلة </strong><strong>شائعة</strong></h3>
-          <p>
-            ولأننا نعلم أن قرار حماية منزلك يحتاج لليقين الكامل..
-            جمعنا لك أبرز الاستفسارات التي تدور في ذهنك الآن.
-          </p>
-        </div>
-
-        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- FAQ 1 -->
-          <div class="faq-item faq-active">
+    @foreach($faqs as $faq)
+        <div class="faq-item {{ $loop->first ? 'faq-active' : '' }}">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>هل عزل الأسطح سيقلل فعليًا من فاتورة الكهرباء؟</h3>
-            <div class="faq-content">
-              <p>
-                العزل الحراري هو استثمار يسترد قيمته ذاتيًا، فـ عزل الفوم أو البولي يوريثان
-                يعمل كحائط صد أمام حرارة الشمس مما يقلل تشغيل المكيفات لساعات طويلة
-                ويخفض استهلاك الطاقة بنسبة تصل إلى 40%.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
 
-          <!-- FAQ 2 -->
-          <div class="faq-item">
-            <i class="faq-icon bi bi-question-circle"></i>
-            <h3>ماذا يفيدني الضمان لمدة 10 سنوات إذا ظهر تسريب بعد سنة؟</h3>
-            <div class="faq-content">
-              <p>
-                نحن نستخدم مواد معتمدة لا تتأثر بالعوامل الجوية، وفي حال حدوث أي مشكلة
-                نحن نلتزم بالحضور الفوري والمعالجة الشاملة دون أي تكلفة إضافية ضمن فترة الضمان.
-              </p>
-            </div>
-            <i class="faq-toggle bi bi-chevron-right"></i>
-          </div>
+            <h3>{{ $faq->question }}</h3>
 
-       
+            <div class="faq-content">
+                <p>{{ $faq->answer }}</p>
+            </div>
+
+            <i class="faq-toggle bi bi-chevron-right"></i>
         </div>
+    @endforeach
 
-      </div>
-
-      <!-- Image -->
-      <div class="col-lg-5 order-1 order-lg-2">
-        <img src="{{ asset('assets/img/faq.jpg') }}" class="img-fluid" alt="" data-aos="zoom-in">
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+</div>
 
         <!-- Clients Section -->
     <section id="clients" class="clients section">
