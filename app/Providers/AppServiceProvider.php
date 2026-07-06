@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
     view()->composer('*', function ($view) {
-        $view->with('services', Service::latest()->get());
+        $view->with('services', Service::orderBy('sort_order')->get());
     });    }
 }
