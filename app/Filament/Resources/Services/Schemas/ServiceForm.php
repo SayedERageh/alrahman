@@ -54,13 +54,16 @@ class ServiceForm
                             ])
                             ->columns(1),
 
-                      TinyEditor::make('content')
-    ->profile('full')
-    ->fileAttachmentsDisk('public')
-    ->fileAttachmentsDirectory('posts')
-    ->columnSpanFull()
-                            ->columns(1),
-
+                    
+Tab::make('📝 محتوى الخدمة')
+    ->schema([
+        TinyEditor::make('content')
+            ->profile('full')
+            ->fileAttachmentsDisk('public')
+            ->fileAttachmentsDirectory('posts')
+            ->columnSpanFull(),
+    ])
+    ->columns(1),
                         Tab::make('🔎 SEO')
                             ->schema([
 

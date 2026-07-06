@@ -134,9 +134,9 @@
 
             <h4 class="mb-2">{{ $service->title }}</h4>
 
-            <p class="text-muted">
+            <div class="text-muted">
               {{ Str::limit($service->description, 90) }}
-            </p>
+            </div>
 
             <a href="{{ route('services.show', $service->slug) }}"
                class="btn btn-primary btn-sm mt-2">
