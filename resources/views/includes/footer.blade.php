@@ -17,7 +17,7 @@
     </p>
 
 
-    <p class="mt-3"><strong>رقم التواصل:</strong> <span>966551689585</span></p>
+    <p class="mt-3"><strong>رقم التواصل:</strong> <span>966551689585+</span></p>
     <p><strong>متاحون لخدمتكم طوال أيام الأسبوع</strong></p>
   </div>
 </div>
