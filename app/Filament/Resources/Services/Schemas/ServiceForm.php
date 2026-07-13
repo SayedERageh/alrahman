@@ -57,7 +57,7 @@ class ServiceForm
                     
 Tab::make('📝 محتوى الخدمة')
     ->schema([
-        TinyEditor::make('content')
+        TinyEditor::make('description')
             ->profile('full')
             ->fileAttachmentsDisk('public')
             ->fileAttachmentsDirectory('posts')
