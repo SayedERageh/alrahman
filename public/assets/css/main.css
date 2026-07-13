@@ -248,6 +248,126 @@ h6 {
     order: 3;
   }
 }
+
+
+/*==========================
+        FAQ Premium
+===========================*/
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    margin-bottom:20px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.faq-item:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 45px rgba(0,102,255,.18);
+}
+
+/* Header */
+
+.faq-header{
+
+    background:linear-gradient(135deg,#0d6efd,#0a58ca);
+    color:#fff;
+    padding:22px 25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.faq-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.faq-title i{
+    font-size:30px;
+    color:#fff;
+}
+
+.faq-header h3{
+
+    margin:0;
+    color:#fff;
+    font-size:21px;
+    font-weight:700;
+    line-height:1.6;
+}
+
+/* Answer */
+
+.faq-content{
+
+    background:#fff;
+    padding:25px 30px;
+    border-top:1px solid #edf2f7;
+}
+
+.faq-content p{
+
+    margin:0;
+    color:#555;
+    font-size:17px;
+    line-height:2;
+}
+
+/* Arrow */
+
+.faq-toggle{
+
+    color:#fff;
+    font-size:22px;
+    transition:.3s;
+}
+
+.faq-active .faq-toggle{
+    transform:rotate(180deg);
+}
+
+/* Active */
+
+.faq-active .faq-header{
+
+    background:linear-gradient(135deg,#0066ff,#0099ff);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.faq-header{
+
+padding:18px;
+}
+
+.faq-header h3{
+
+font-size:18px;
+}
+
+.faq-content{
+
+padding:20px;
+}
+
+.faq-content p{
+
+font-size:16px;
+}
+
+}
 /* The Frist Hero */
 .first-hero {
   position: relative;

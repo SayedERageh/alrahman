@@ -276,29 +276,4 @@
 }
 </style>
 
- <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div dir="rtl" class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-        <img src="{{ asset('assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
-          <h1>عزل الأسطح <span>درع الحماية الأقوى</span></h1>
-
-  <p>
-    لمبناك يبدأ من اختيارك للشريك الصحيح.<br>
-    نقدم حلول عزل هندسية متكاملة تضمن استدامة مبناك وقيمته العقارية<br>
-    بضمان حقيقي يصل إلى 10 سنوات.
-  </p>
-        <div class="d-flex" dir="rtl">
-    <a href="tel:+201000000000" class="btn-watch-video d-flex align-items-center">
-              <span>اتصل بنا</span>
-
-      <i class="bi bi-telephone"></i>
-    </a>
-        <a href="#contact" class="btn-get-started scrollto">تواصل معنا الآن</a>
-
-  </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
 @endsection

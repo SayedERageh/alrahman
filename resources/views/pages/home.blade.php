@@ -328,19 +328,23 @@
 
 </section>
 
-<div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+<div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200" dir="rtl">
 
     @foreach($faqs as $faq)
         <div class="faq-item {{ $loop->first ? 'faq-active' : '' }}">
-            <i class="faq-icon bi bi-question-circle"></i>
 
-            <h3>{{ $faq->question }}</h3>
+            <div class="faq-header">
+                <div class="faq-title">
+                    <i class="bi bi-patch-question-fill"></i>
+                    <h3>{{ $faq->question }}</h3>
+                </div>
+
+            </div>
 
             <div class="faq-content">
                 <p>{{ $faq->answer }}</p>
             </div>
 
-            <i class="faq-toggle bi bi-chevron-right"></i>
         </div>
     @endforeach
 
