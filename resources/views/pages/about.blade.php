@@ -3,20 +3,27 @@
 @section('title', 'الصفحة الرئيسية')
 
 @section('content')
- <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-2.jpg);">
-        <div class="container-fluid page-header-inner py-5">
-            <div class="container text-center">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">من نحن</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center text-uppercase">
-                        <li class="breadcrumb-item"><a href="{{ route('contact') }}">Home</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">about</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5">
+    <div class="container page-header-inner text-center">
+        <h1 class="display-3 text-white fw-bold mb-3 animated slideInDown">
+            من نحن
+        </h1>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item">
+                    <a href="{{ route('home') }}">الرئيسية</a>
+                </li>
+                <li class="breadcrumb-item text-white active" aria-current="page">
+                    من نحن
+                </li>
+            </ol>
+        </nav>
     </div>
+</div>
+<!-- Page Header End -->
+<!-- Page Header End -->
 <!-- About Section -->
 <section id="about" class="about-simple py-5" dir="rtl">
     <div class="container">
