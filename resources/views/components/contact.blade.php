@@ -39,13 +39,6 @@
             </div>
           </div>
 
-          <div class="info-item d-flex">
-            <i class="bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h4>البريد الإلكتروني:</h4>
-              <p>info@alrahman.com</p>
-            </div>
-          </div>
 
           <div class="info-item d-flex">
             <i class="bi bi-phone flex-shrink-0"></i>
