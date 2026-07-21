@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', $page->seo_title ?? $page->title)
+@section('title', $page?->seo_title ?? 'من نحن')
 
-@section('description', $page->seo_description)
+@section('description', $page?->seo_description)
 
-@section('keywords', $page->seo_keywords)
+@section('keywords', $page?->seo_keywords)
 @section('content')
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5">
