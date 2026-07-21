@@ -4,9 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>@yield('title')</title>
-  <meta name="description" content="@yield('description')">
-  <meta name="keywords" content="@yield('keywords')">
+
+<title>@yield('title', 'شركة الرحمن لعزل الأسطح والخزانات')</title>
+
+<meta name="description"
+    content="@yield('description', 'شركة الرحمن لعزل الأسطح والخزانات تقدم خدمات العزل المائي والحراري وعزل الفوم وعزل الخزانات بأفضل الخامات وأعلى معايير الجودة في جميع أنحاء مصر.')">
+
+<meta name="keywords"
+    content="@yield('keywords', 'شركة الرحمن, عزل الأسطح, عزل الخزانات, العزل المائي, العزل الحراري, عزل فوم, كشف تسربات المياه, عزل الأسقف, عزل المباني')">
+
+<meta name="author" content="شركة الرحمن لعزل الأسطح والخزانات">
+
+<meta name="robots" content="@yield('robots', 'index,follow')">
+
+<link rel="canonical" href="@yield('canonical', url()->current())">
+
+<meta property="og:title" content="@yield('title', 'شركة الرحمن لعزل الأسطح والخزانات')">
+
+<meta property="og:description"
+    content="@yield('description', 'شركة الرحمن لعزل الأسطح والخزانات تقدم خدمات العزل المائي والحراري وعزل الفوم وعزل الخزانات بأفضل جودة.')">
+
+<meta property="og:url" content="{{ url()->current() }}">
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="شركة الرحمن لعزل الأسطح والخزانات">
+```
+
 
   <!-- Favicons -->
   <link href="{{asset('assets/img/favicon.png')}}" rel="icon">

@@ -4,45 +4,55 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Post;
-
+use App\Models\PostPage;
 use Illuminate\Http\Request;
+
 class PostController extends Controller
 {
-public function index(Request $request)
-{
-    $categories = Category::all();
+    // صفحة جميع المقالات
+    public function index(Request $request)
+    {
+        $page = PostPage::first();
 
-    $posts = Post::query();
+        $categories = Category::all();
 
-    // فلترة حسب الكاتيجوري لو موجود
-    if ($request->filled('category')) {
-        $posts->where('category_id', $request->category);
+        $posts = Post::query();
+
+        // فلترة حسب التصنيف
+        if ($request->filled('category')) {
+            $posts->where('category_id', $request->category);
+        }
+
+        $posts = $posts->latest()->get();
+
+        return view('posts.index', compact(
+            'page',
+            'posts',
+            'categories'
+        ));
     }
 
-    $posts = $posts->latest()->get();
+    // صفحة تفاصيل المقال
+    public function show($slug)
+    {
+        $post = Post::with(['paragraphs', 'category'])
+            ->where('slug', $slug)
+            ->firstOrFail();
 
-    return view('posts.index', compact('posts', 'categories'));
-}
+        $recentPosts = Post::latest()->take(5)->get();
 
-public function show($slug)
-{
-    $post = Post::with(['paragraphs', 'category'])->where('slug', $slug)->firstOrFail();
+        $categories = Category::withCount('posts')->get();
 
-    $recentPosts = Post::latest()->take(5)->get();
+        $relatedPosts = Post::where('category_id', $post->category_id)
+            ->where('id', '!=', $post->id)
+            ->take(3)
+            ->get();
 
-    $categories = Category::withCount('posts')->get();
-
-    $relatedPosts = Post::where('category_id', $post->category_id)
-        ->where('id', '!=', $post->id)
-        ->take(3)
-        ->get();
-
-    return view('posts.show', compact(
-        'post',
-        'recentPosts',
-        'categories',
-        'relatedPosts'
-    ));
-}
-
+        return view('posts.show', compact(
+            'post',
+            'recentPosts',
+            'categories',
+            'relatedPosts'
+        ));
+    }
 }

@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Service;
 use App\Models\Faq;
+use App\Models\HomePage;
+use App\Models\Service;
 
 class HomeController extends Controller
 {
     public function index()
     {
+        $page = HomePage::first();
+
         $services = Service::orderBy('sort_order')
             ->take(6)
             ->get();
@@ -17,6 +20,10 @@ class HomeController extends Controller
             ->orderBy('sort_order')
             ->get();
 
-        return view('pages.home', compact('services', 'faqs'));
+        return view('pages.home', compact(
+            'page',
+            'services',
+            'faqs'
+        ));
     }
 }

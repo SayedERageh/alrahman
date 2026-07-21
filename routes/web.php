@@ -6,19 +6,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\AboutController;
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
-Route::get('/من-نحن', function () {
-    return view('pages.about');
-})->name('about');
-Route::get('/تواصل-معنا', function () {
-    return view('pages.contact');
-})->name('contact');
 
+Route::get('/من-نحن', [AboutController::class, 'index'])->name('about');
+
+Route::get('/تواصل-معنا', [ContactController::class, 'index'])->name('contact');
 
 // 🔥 Services Routes
 Route::get('/الخدمات', [ServiceController::class, 'index'])->name('services.index');

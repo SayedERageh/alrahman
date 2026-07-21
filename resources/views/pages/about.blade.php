@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'الصفحة الرئيسية')
+@section('title', $page->seo_title ?? $page->title)
 
+@section('description', $page->seo_description)
+
+@section('keywords', $page->seo_keywords)
 @section('content')
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5">
@@ -107,7 +110,7 @@
             <div class="icon"><i class="bi bi-shield-check"></i></div>
             <h4>لماذا نحن؟</h4>
             <p>
-              مواد معتمدة – فريق متخصص – اختبار 100% – ضمان يصل إلى 10 سنوات.
+       مواد معتمدة – فريق متخصص – اختبار 100% – وجود ضمان على جميع أعمال العزل .
             </p>
           </div>
         </div>

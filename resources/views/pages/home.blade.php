@@ -1,7 +1,9 @@
 @extends('layouts.app')
+@section('title', $page?->seo_title ?? 'الرئيسية')
 
-@section('title', 'الصفحة الرئيسية')
+@section('description', $page?->seo_description)
 
+@section('keywords', $page?->seo_keywords)
 @section('content')
 
   <main class="main">
@@ -100,7 +102,7 @@
           <div class="icon mb-3">
             <i class="bi bi-award"></i>
           </div>
-          <h4>ضمان 10 سنوات</h4>
+          <h4>ضمان على جميع أعمال العزل</h4>
           <p>نمنحك شهادة ضمان موثقة تعكس ثقتنا في جودة أعمالنا.</p>
         </div>
       </div>
@@ -204,7 +206,7 @@
 
       <!-- Video -->
       <div class="col-lg-6 video-play position-relative">
-        <a href="https://youtube.com/shorts/EO4CEZ1MZ4o?feature=share" class="glightbox pulsating-play-btn"></a>
+        <a href="youtube.com/watch?v=FjH1Uva6AFM&feature=youtu.be" class="glightbox pulsating-play-btn"></a>
       </div>
 
       <!-- Content -->
@@ -220,7 +222,7 @@
           </p>
 
           <ul>
-            <li><i class="bi bi-check-circle"></i> ضمان يصل إلى 10 سنوات على جميع أعمال العزل</li>
+            <li><i class="bi bi-check-circle"></i> وجود ضمان على جميع أعمال العزل</li>
             <li><i class="bi bi-check-circle"></i> تنفيذ وفق المواصفات القياسية العالمية</li>
             <li><i class="bi bi-check-circle"></i> اختبار شامل قبل التسليم (Flood Test)</li>
             <li><i class="bi bi-check-circle"></i> متابعة دورية ودعم فني بعد التنفيذ</li>

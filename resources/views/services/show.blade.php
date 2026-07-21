@@ -76,9 +76,6 @@
 
                     <hr>
 
-                    <p><strong>SEO Description:</strong></p>
-                    <p>{{ $service->meta_description }}</p>
-
                 </div>
 
             </div>
