@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
 <title>@yield('title', 'شركة الرحمن لعزل الأسطح والخزانات')</title>
 
 <meta name="description"
@@ -29,7 +28,6 @@
 <meta property="og:type" content="website">
 
 <meta property="og:site_name" content="شركة الرحمن لعزل الأسطح والخزانات">
-```
 
 
   <!-- Favicons -->
