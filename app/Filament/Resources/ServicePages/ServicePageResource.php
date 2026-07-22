@@ -7,7 +7,7 @@ use App\Filament\Resources\ServicePages\Pages\EditServicePage;
 use App\Filament\Resources\ServicePages\Pages\ListServicePages;
 use App\Filament\Resources\ServicePages\Schemas\ServicePageForm;
 use App\Filament\Resources\ServicePages\Tables\ServicePagesTable;
-use App\Models\ServicePage;
+use App\Models\Servicepage;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -17,7 +17,7 @@ use UnitEnum;
 
 class ServicePageResource extends Resource
 {
-    protected static ?string $model = ServicePage::class;
+    protected static ?string $model = Servicepage::class;
 
 protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedWrenchScrewdriver;
 
